@@ -1,0 +1,21 @@
+{
+    "name": "k1low/yassl",
+    "description": "Yassl: Yet Another SSL detect plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "ssl"],
+    "homepage": "https://github.com/k1LoW/Yassl",
+    "license": "MIT",
+    "authors": [
+	    {
+	        "name": "Ken'ichiro Oyama",
+	        "homepage": "https://github.com/k1LoW",
+	        "role": "Author"
+	    }
+    ],
+    "require": {
+        "composer/installers": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
+}
