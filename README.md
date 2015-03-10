@@ -1,4 +1,4 @@
-# Yassl: Yet Another SSL detect plugin for CakePHP
+# Yassl: Yet Another SSL detect management plugin for CakePHP
 
 ## License
 

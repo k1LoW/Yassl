@@ -14,9 +14,23 @@ class YasslComponent extends Component
     public function initialize(Controller $controller)
     {
         $this->Controller = $controller;
-        if ($this->force === true && $this->isSSL() !== true) {
+
+        $this->Controller->request->addDetector('ssl', array(
+            'callback' => array($this, 'addCallbackDetector'),
+        ));
+
+        if ($this->force === true && $this->Controller->request->is('ssl') !== true) {
             $this->forceSSL();
         }
+    }
+
+    /**
+     * addCallbackDetector
+     *
+     */
+    public function addCallbackDetector($request)
+    {
+        return $this->isSSL();
     }
 
     public function isSSL()
